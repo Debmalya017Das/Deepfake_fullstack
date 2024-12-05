@@ -24,7 +24,7 @@ class DeepfakeDetectionView(APIView):
         
         try:
             # Load model
-            model_path = os.path.join(settings.BASE_DIR, 'models', 'resnet_lstm_model.pth')
+            model_path = os.path.join(settings.BASE_DIR, 'models', 'best_deepfake_model.pth')
             model = load_model(model_path)
             
             # Preprocess video
